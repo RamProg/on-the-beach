@@ -4,7 +4,7 @@ This project was created as part of the interview process for the company On The
 
 ## Requirements
 
-Find all requirements in the [TODO file](TODO). You can also find the [design here](design.png).
+Find all requirements in the [TODO file](./TODO). You can also find the [design here](./design.png).
 
 ## How to Run the App
 
@@ -22,4 +22,4 @@ Find all requirements in the [TODO file](TODO). You can also find the [design he
 
 ## About me
 
-You can lear more about me in [my website](https://ramiro.uk)
+You can learn more about me in [my website](https://ramiro.uk)
