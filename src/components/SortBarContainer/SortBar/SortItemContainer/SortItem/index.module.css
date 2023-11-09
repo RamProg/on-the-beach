@@ -1,0 +1,42 @@
+.container {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: large;
+}
+
+.selected {
+  background-color: #17317f;
+  color: white;
+}
+
+.selectedTitle {
+  color: white;
+}
+
+.title {
+  color: #17317f;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.selectedIcon {
+  color: white;
+}
+
+.icon {
+  color: lightgray;
+}
+
+.iconContainer {
+  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

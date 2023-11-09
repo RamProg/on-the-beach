@@ -1,0 +1,36 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  padding: 8px 20px 8px 20px;
+  color: #17317f;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 232px;
+}
+
+.iconContainer {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.read {
+  font-weight: bold;
+  margin-right: 4px;
+  width: 100%;
+}
+
+.title {
+  white-space: nowrap;
+}
+
+.container:hover {
+  cursor: pointer;
+}
