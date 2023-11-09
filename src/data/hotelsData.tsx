@@ -1,4 +1,6 @@
-export const hotelsData = [
+import { Hotel } from "../types";
+
+export const hotelsData: Hotel[] = [
   {
     id: "hotel-ibero-salome",
     hotelName: "Iberostar Grand Salome",

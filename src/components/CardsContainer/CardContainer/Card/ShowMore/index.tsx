@@ -14,13 +14,17 @@ const ShowMore = ({ isActive = true, handleChange }: ShowMoreProps) => {
   const chevronIcon = isActive ? faChevronDown : faChevronRight;
 
   return (
-    <div className={styles.container} onClick={handleChange}>
+    <div
+      className={styles.container}
+      onClick={handleChange}
+      data-testid="show-more-container"
+    >
       <span className={styles.title}>
         <span className={styles.read}>Read {isActive ? "less" : "more"}</span>
         about this hotel
       </span>
       <div className={styles.iconContainer}>
-        <FontAwesomeIcon icon={chevronIcon} className={styles.icon} size="lg" />
+        <FontAwesomeIcon title="icon" icon={chevronIcon} size="lg" />
       </div>
     </div>
   );

@@ -8,17 +8,18 @@ describe("CardsContainer", () => {
     expect(cardsContainer).toBeInTheDocument();
   });
 
-  it.skip("renders the cards", () => {
+  it("renders the right number of cards", () => {
     render(<CardsContainer />);
     const cards = screen.getAllByTestId("card");
     expect(cards).toHaveLength(3);
   });
 
-  it.skip("renders the card titles", () => {
+  it("renders the cards initially ordered by price", () => {
     render(<CardsContainer />);
-    const cardTitles = screen.getAllByTestId("card-title");
-    expect(cardTitles[0]).toHaveTextContent("Card 1");
-    expect(cardTitles[1]).toHaveTextContent("Card 2");
-    expect(cardTitles[2]).toHaveTextContent("Card 3");
+    const cards = screen.getAllByTestId("card");
+
+    expect(cards[0]).toHaveTextContent("£499.99");
+    expect(cards[1]).toHaveTextContent("£696.80");
+    expect(cards[2]).toHaveTextContent("£1,136.50");
   });
 });

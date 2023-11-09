@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-type SortType = "price" | "star" | "alpha";
+export type SortType = "price" | "star" | "alpha";
 
 type SortContextType = {
   sortType: SortType;

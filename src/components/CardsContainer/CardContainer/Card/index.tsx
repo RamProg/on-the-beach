@@ -39,7 +39,7 @@ const Card = ({
   const imagePath = `${IMAGES_PATH}/${image}`;
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="card">
       <div className={styles.card}>
         <div className={styles.imageContainer}>
           <img src={imagePath} alt={image} className={styles.hotelImage} />
@@ -52,7 +52,7 @@ const Card = ({
           <h1 className={styles.title}>{hotelName}</h1>
           <h2 className={styles.subtitle}>{location}</h2>
           <Stars number={numberOfStars} />
-          <div className={styles.detail}>{passengers}</div>
+          <div className={styles.detail} data-testid="card-passengers" >{passengers}</div>
           <p className={styles.detail}>
             <b>{departureDate}</b> for <b>{duration}</b>
           </p>

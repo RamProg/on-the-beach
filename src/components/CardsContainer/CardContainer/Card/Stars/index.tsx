@@ -11,9 +11,14 @@ const Stars = ({ number }: StarsProps) => {
   const stars = new Array(number).fill(0);
 
   return (
-    <div>
+    <div data-testid="stars-container">
       {stars.map((_, index) => (
-        <FontAwesomeIcon icon={faStar} className={styles.checked} key={index} />
+        <FontAwesomeIcon
+          title="icon"
+          icon={faStar}
+          className={styles.checked}
+          key={index}
+        />
       ))}
     </div>
   );

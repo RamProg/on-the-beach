@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { sortBarData as items } from "../../data/sortBarData";
 import SortBar from "./SortBar";
-import styles from "./index.module.css";
 import { useSort } from "../../hooks/useSort/useSort";
 
 const SortBarContainer = () => {
@@ -15,13 +14,11 @@ const SortBarContainer = () => {
   };
 
   return (
-    <aside className={styles.container}>
       <SortBar
         items={items}
         itemSelectedIdx={itemSelectedIdx}
         setItemSelectedIdx={handleItemSelected}
       />
-    </aside>
   );
 };
 

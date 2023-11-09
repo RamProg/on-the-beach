@@ -2,12 +2,14 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import SortItemContainer from "./SortItemContainer";
 import styles from "./index.module.css";
 
+type IconProps = {
+  text: string;
+  type: string;
+  icon: IconDefinition;
+};
+
 type SortBarProps = {
-  items: Array<{
-    text: string;
-    type: string;
-    icon: IconDefinition;
-  }>;
+  items: IconProps[];
   itemSelectedIdx: number;
   setItemSelectedIdx: (idx: number) => void;
 };
@@ -18,7 +20,7 @@ const SortBar = ({
   setItemSelectedIdx,
 }: SortBarProps) => {
   return (
-    <div className={styles.container}>
+    <aside className={styles.container}>
       {items.map((item, idx) => {
         const isLastItem = idx === items.length - 1;
 
@@ -34,7 +36,7 @@ const SortBar = ({
           </div>
         );
       })}
-    </div>
+    </aside>
   );
 };
 
